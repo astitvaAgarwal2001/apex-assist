@@ -19,7 +19,8 @@
       "js": [
         "testGenerator.js",
         "errorExplainer.js",
-        "content.js"
+        "content.js",
+        "analyzer.js"
       ],
       "css": [
         "content.css"

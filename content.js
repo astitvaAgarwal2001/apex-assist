@@ -31,7 +31,7 @@
 
     panel.innerHTML = `
       <div class="apexAssist-header">
-        <h2>⚡ ApexAssist</h2>
+        <h2>Apex Assist</h2>
         <button id="apexAssist-close" title="Close">×</button>
       </div>
 
