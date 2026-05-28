@@ -1,0 +1,182 @@
+#apexAssist-floating-button {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 999999;
+  background: #0176d3;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+#apexAssist-floating-button:hover {
+  background: #0b5cab;
+}
+
+#apexAssist-panel {
+  position: fixed;
+  top: 80px;
+  right: 24px;
+  width: 420px;
+  max-height: 82vh;
+  z-index: 999999;
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #d8dde6;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.28);
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  display: none;
+}
+
+.apexAssist-header {
+  background: #032d60;
+  color: white;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.apexAssist-header h2 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+#apexAssist-close {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.apexAssist-body {
+  padding: 14px;
+  overflow-y: auto;
+  max-height: calc(82vh - 54px);
+}
+
+.apexAssist-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.apexAssist-tab {
+  flex: 1;
+  border: 1px solid #d8dde6;
+  background: #f3f3f3;
+  color: #181818;
+  padding: 9px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.apexAssist-tab.active {
+  background: #0176d3;
+  color: white;
+  border-color: #0176d3;
+}
+
+.apexAssist-section {
+  display: none;
+}
+
+.apexAssist-section.active {
+  display: block;
+}
+
+.apexAssist-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  margin: 10px 0 6px;
+  color: #181818;
+}
+
+.apexAssist-input,
+.apexAssist-textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #c9c9c9;
+  border-radius: 8px;
+  padding: 9px;
+  font-size: 13px;
+  font-family: Consolas, Monaco, monospace;
+}
+
+.apexAssist-textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.apexAssist-button-row {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.apexAssist-primary-button,
+.apexAssist-secondary-button {
+  border: none;
+  border-radius: 8px;
+  padding: 9px 12px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.apexAssist-primary-button {
+  background: #0176d3;
+  color: white;
+}
+
+.apexAssist-primary-button:hover {
+  background: #0b5cab;
+}
+
+.apexAssist-secondary-button {
+  background: #e5e5e5;
+  color: #181818;
+}
+
+.apexAssist-output {
+  margin-top: 12px;
+  background: #f7f9fb;
+  border: 1px solid #d8dde6;
+  border-radius: 8px;
+  padding: 10px;
+  white-space: pre-wrap;
+  font-family: Consolas, Monaco, monospace;
+  font-size: 12.5px;
+  color: #181818;
+  min-height: 80px;
+}
+
+.apexAssist-note {
+  background: #fef7e6;
+  border: 1px solid #f4c430;
+  border-radius: 8px;
+  padding: 9px;
+  font-size: 12.5px;
+  color: #181818;
+  margin-bottom: 10px;
+}
+
+.apexAssist-success {
+  color: #2e844a;
+  font-size: 12px;
+  margin-top: 8px;
+  display: none;
+}
