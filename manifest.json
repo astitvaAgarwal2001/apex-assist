@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Apex Assist",
+  "version": "1.0.0",
+  "description": "A browser extension that helps Salesforce developers generate Apex test methods and explain common Apex errors inside Developer Console.",
+  "permissions": ["activeTab", "scripting", "clipboardWrite"],
+  "host_permissions": [
+    "https://*.salesforce.com/*",
+    "https://*.force.com/*",
+    "https://*.lightning.force.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.salesforce.com/*",
+        "https://*.force.com/*",
+        "https://*.lightning.force.com/*"
+      ],
+      "js": [
+        "testGenerator.js",
+        "errorExplainer.js",
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
