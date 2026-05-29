@@ -12,9 +12,9 @@
   "content_scripts": [
     {
       "matches": [
-        "https://*.salesforce.com/*",
-        "https://*.force.com/*",
-        "https://*.lightning.force.com/*"
+        "https://*.salesforce.com/_ui/common/apex/debug/*",
+        "https://*.my.salesforce.com/_ui/common/apex/debug/*",
+        "https://*.lightning.force.com/_ui/common/apex/debug/*"
       ],
       "js": [
         "testGenerator.js",

@@ -228,9 +228,8 @@
         const url = window.location.href.toLowerCase();
 
         return (
-            url.includes("salesforce.com") ||
-            url.includes("force.com") ||
-            url.includes("lightning.force.com")
+            url.includes("/_ui/common/apex/debug/apexcsi") ||
+            url.includes("/_ui/common/apex/debug/ApexCSIPage")
         );
     }
 
